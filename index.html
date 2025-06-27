@@ -71,7 +71,7 @@ body {
 
 @keyframes typing {
   to {
-    width: 9ch;
+    width: 9.4ch;
   }
 }
 
@@ -110,11 +110,11 @@ h2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(270deg, #FF0080, #A144FF, #54FFE9);
+  background: linear-gradient(270deg, #D08DFF, #E8C6FF, #54FFE9);
   background-size: 600% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientText 6s ease infinite, animatedTextGradient 1.5s linear infinite;
+  animation: gradientText 4s ease infinite, animatedTextGradient 5s linear infinite;
 }
 
 @keyframes gradientText {
@@ -181,7 +181,22 @@ h2 {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}/*
+}
+.fas.fa-angles-right { color: ;   background: radial-gradient(circle at 100%,
+      #FFFFFF,
+      #7DFF63 50%,
+      #03FF00 75%,
+      #03FF00 75%);
+  font-weight: 600;
+  background-size: 200% auto;
+  background-clip: text;
+  gap: 1px;
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedTextGradient 1.5s linear infinite;
+}
+/*
 .fab.fa-python { color: #EFFF07; }
 .fab.fa-html5 { color: #FF4F23; }
 .fab.fa-css3-alt { color: #4269FF; }
@@ -210,7 +225,7 @@ h2 {
 }
 
 #darkToggle.active {
-  color: crimson;
+  color: #D08DFF;
 }
 
 #darkToggle:hover {
@@ -236,12 +251,12 @@ h2 {
   font-size: 20px;
   cursor: pointer;
   z-index: 1000;
-  background-color: crimson;
+  background-color: #E8C6FF;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px crimson;
+  box-shadow: 0 0 10px #E8C6FF;
   transform: scale(0);
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -262,10 +277,10 @@ h2 {
 
 .footer p a {
   background: radial-gradient(circle at 100%,
-      #E0B4FF,
-      #D08DFF 50%,
-      #E0B4FF 75%,
-      #D08DFF 75%);
+      #FFFFFF,
+      #FF3A3A 50%,
+      #FF5252 75%,
+      #FF3A3A 75%);
     font-weight: 600;
     background-size: 200% auto;
     color: #000;
@@ -275,15 +290,20 @@ h2 {
 }
 @keyframes animatedTextGradient {
   to {
-    background-position: 200% center;
+    background-position: -200% center;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #D08DFF;
 }
   </style>
 </head>
 <body>
     <div class="fullpage-hero">
     <img src="images/stark_pfp.jpg" alt="Stark" style="width: 120px; border-radius: 50%; box-shadow: 0 0 10px crimson; margin-bottom: 20px;">
-    <div class="typing naa"> Stark here!</div>
+    <div class="typing"> Stark here !</div>
   </div>
 
   <section class="reveal">
@@ -295,14 +315,32 @@ h2 {
 
   <section class="reveal">
     <div class="card">
-      <h2><i class="fas fa-music"></i> Hobbies</h2><br>
+      <h2><i class="fas fa-terminal"></i> Projects </h2><br>
+      <span></span>
+      <p><i class="fas fa-robot"></i><a href="https://eternalsai.vercel.app" >Eternals AI - Voice calling AI  <i class="fas fa-link"></i></a><br><br><i class="fas fa-angles-right"></i>Live one to one voice calling AI assistant with Human like emotions and feelings.<br><br>
+      
+      <hr style="width: 18em; margin: 0 0 0 1em;"><br>
+        
+      </header>
+         <i class="fas fa-clipboard"></i> <a href="https://eternalsai-quiz.vercel.app">ㅤPDF to Quiz Maker AI  <i class="fas fa-link"></i></a><br><br><i class="fas fa-angles-right"></i> Make Quizes effortlessly, just with an PDF file. <br><br>
+         
+      <hr style="width: 18em; margin: 0 0 0 1em;"><br>
+      
+         <i class="fas fa-globe"></i> <a href="https://eternalss.vercel.app">ㅤEternals Network  <i class="fas fa-link"></i></a><br><br>
+         <i class="fas fa-angles-right"></i> Official website of ETERNALS NETWORK <br><br>
+    </div>
+  </section>
+  
+  <section class="reveal">
+    <div class="card">
+      <h2><i class="fas fa-layer-group"></i> Hobbies</h2><br>
       <p><i class="fas fa-music"></i> Listening to music <br><br>
          <i class="fas fa-lightbulb"></i> Learning something new every day <br><br>
          <i class="fas fa-video"></i> Editing <br><br>
          <i class="fas fa-code"></i> Programming</p>
     </div>
   </section>
-
+  
   <section class="reveal">
     <div class="card">
       <h2><i class="fas fa-code"></i> Skills</h2><br>
@@ -319,9 +357,12 @@ h2 {
   <section class="reveal">
     <div class="card">
       <h2><i class="fas fa-address-book"></i> Contact</h2> <br>
-      <p><i class="fab fa-telegram"></i> Telegram: @UrStaRk</p> <br> 
-      <p><i class="fab fa-whatsapp"></i> WhatsApp: +6281233741890</p> <br> 
-      <p><i class="fab fa-instagram"></i> Instagram: @your_ig_handle</p>
+      <p><i class="fab fa-telegram"></i> Telegram: <a href="https://t.me/urSTARK">@UrStaRk  <i class="fas fa-link" style="font-size: 12px;"></i></a></p> <br> 
+     <!-- <p><i class="fab fa-whatsapp"></i> WhatsApp: </p> <br>--> 
+     
+      <hr style="width: 13em;"><br>
+     
+      <p><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/urs_Stark">@urs_STARK  <i class="fas fa-link" style="font-size: 12px;"></i></a></p>
     </div>
   </section>
 
@@ -369,6 +410,6 @@ h2 {
   <!--<p>Oᴡɴᴇʀ ~ <span style="color: red;">Sᴛᴀʀᴋ</span></p>-->
   <p> ©2025 • Sᴛᴀʀᴋ • Aʟʟ Rɪɢʜᴛs Rᴇsᴇʀᴠᴇᴅ</p>
 </footer>
-
+<br>
 </body>
 </html>
